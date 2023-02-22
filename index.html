@@ -1,9 +1,11 @@
 <html>
     <head>
         <title>Links</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="assets/arena.js"></script>
     </head>
 
     <!--Header-->
@@ -12,11 +14,43 @@
             <div class="title-section">
                 <H1 class="title-header">Like a </br>bartender</H1>
                 <P class="title-subheader">This collection features various cocktail combinations, top articles about bartending, tips, and various guides to bartending.</P>
-                <a href="collection.html"><H2 class="button">view collection</H2></a>
+                <a href="collection.html"><H2 class="button">choose your drink!</H2></a>
                   </div>
             </div>
+            <section>
+                <!-- Replace this URL with your channel to connect the API! -->
+                <a href="https://www.are.na/han-bao-vkqfpuqd5ss/links-wumbhnnaisc" id="channel-url">
+                    
+                </a>
+            </section>
+            <div class="scroll">
+                <ul class="image-blocks"></ul>
+            </div>
 
-    <!--Gallery-->
+            <template id="image-block">
+                <div class="collection-gallery">
+                    <figure class="image-block">
+    
+                        <!--<h3 class="title"></h3>-->
+    
+                        <picture>
+                            <source class="image-thumb">
+                            <source class="image-square">
+                            <source class="image-display">
+                            <img class="image">
+                        </picture>
+                        <a class="link">
+                            <p class="link-title"></p>
+                        </a>
+                        <figcaption class="description"></figcaption>
+                        <!--
+                        <p class="time-updated"></p>
+                        <p class="time-created"></p>
+                        -->
+                    </figure>
+                </div>
+            </template>
+    <!--Gallery
             <div class="scroll">
                     <div class="polaroid">
                     <img src="Drinks-1.jpg" alt="Alcohol drink">
@@ -61,6 +95,7 @@
                     <img src="Drinks-13.png" alt="Polaroid 9">
                     </div>
             </div>
+        -->
         </section>
     </body>
 </html>
