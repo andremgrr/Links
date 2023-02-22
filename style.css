@@ -8,17 +8,45 @@ html, body {
 /* Typography */
 
 @font-face {
+	font-family: 'Broodim';
+	src: url('Broodimtrial.otf') format('opentype');
+ }
+
+ @font-face {
 	font-family: 'Genty';
 	src: url('GentyDemo-Regular.otf') format('opentype');
  }
 
 @import url('https://use.typekit.net/msh6brx.css');
 
+:root {
+  --base: 16px;
+  --header: 80px;
+  --flex-direction: column;
+  --width: 100px;
+  --height: 120px;
+}
+
+@media (min-width: 800px){
+  :root {
+      --base: 30px;
+      --header: 150px;
+      --flex-direction: row;
+      --width: 250px;
+      --height: 300px;
+      
+  }
+}
+
+section.dynamic {
+  display: flex;
+  flex-direction: var(--flex-direction);
+}
+
 /* Header */
 
 .title-section {
     height: 50vh;
-    background-image: url(Header-BG.png);
     padding-top: 10vh;
     padding-left: 10vh;
 }
@@ -30,12 +58,57 @@ html, body {
 }
 
 .title-header {
-    height: 40vh;
-    font-family:'Genty';
-    font-size: 100px;
-    color:#f8f4e7;
-    text-shadow: 0 0 10px #ffdc41, 0 0 20px #ffdc41, 0 0 30px #ffdc41, 0 0 40px;
-    padding-left: 5vw;
+    font-family:'Broodim';
+    font-size: var(--header);
+    color:#f7eed0;
+    text-shadow: 0 0 10px #efce36, 0 0 20px #efce36, 0 0 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title-subheader {
+  font-family: "sirenia", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: var(--base);
+  color:#ffffff;
+  margin-top: 0;
+}
+
+@media (max-width: 500px) {
+  .title-subheader {
+      width: 70vw;
+  }
+}
+
+.button {
+  font-family: "sirenia", sans-serif;
+  font-size: 20px;
+  border: solid white;
+  border-radius: 40px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .button {
+    font-size: 16px;
+  }
+}
+
+.button:hover {
+  background-color: white;
+  font-family: "sirenia", sans-serif;
+  font-size: 20px;
+  border-radius: 40px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media (max-width: 425px) {
@@ -71,34 +144,34 @@ body {
     font-family: "sirenia", sans-serif;
     font-weight: 100;
     font-style: normal;
-    font-size: 36px;
+    font-size: var(--base);
     color:#ffffff;
     padding-left: 10vw;
     margin-top: 0;
 }
 
-.polaroid-container {
+div.scroll {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 40vh;
     padding: 20px;
     padding-bottom: 15vh;
   }
 
-  .polaroid-container-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 20px;
-    padding-bottom: 15vh;
-    margin-left: 8vw;
-  }
+  @media only screen and (min-width:720px) {
+    div.scroll {
+      height: 80vh;
+    }
+}
 
 .polaroid {
-    width: 250px;
-    height: 300px;
+    width: var(--width);
+    height: var(--height);
     margin: 10px;
-    border: 10px solid white;
+    border: 20px solid white;
     border-bottom: 50px solid white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -106,29 +179,11 @@ body {
     position: relative;
   }
 
-.polaroid-wide {
-    width: 350px;
-    height: 300px;
-    margin: 10px;
-    border: 10px solid white;
-    border-bottom: 50px solid white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .polaroid-wide-2 {
-    width: 350px;
-    height: 300px;
-    margin: 10px;
-    border: 10px solid white;
-    border-bottom: 50px solid white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    overflow: hidden;
-    position: relative;
-  }
+  @media only screen and (max-width:500px) {
+    .polaroid {
+      margin: 3px;
+    }
+}
 
 
   .polaroid img {
