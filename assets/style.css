@@ -120,7 +120,21 @@ section.dynamic {
 
 
 body {
-    background: linear-gradient(-45deg, #FE9A38, #EA8C82);
+    background: linear-gradient(-45deg, #FE9A38, #EA8C82, #f5bc42, #e771b8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .body-section {
@@ -218,13 +232,101 @@ div.scroll {
 
   */
 
+  /* Collection code */
+
+  .collection-body {
+    background: linear-gradient(-45deg, #FE9A38, #EA8C82, #f5bc42, #e771b8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
   .title {
     font-family:"sirenia", sans-serif;
     font-weight: 100;
     font-size: 30px;
   }
 
-  .image-block .title {
-    color: orange;
+  .image-block {
+    width: var(--width);
+    height: var(--height);
+    margin: 10px;
+    border: 20px solid white;
+    border-bottom: 50px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    overflow: hidden;
+    position: relative;
 
   }
+
+  .collection-header {
+    font-family:'Broodim';
+    font-size: 90px;
+    color:#f7eed0;
+    text-shadow: 0 0 10px #efce36, 0 0 20px #efce36, 0 0 30px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+  .collection-subheader {
+    font-family: "sirenia", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: var(--base);
+    color:#ffffff;
+    margin-top: 0;
+    margin-left: 50px;
+    width: 70vw;
+}
+
+.channel-count {
+  font-family: "sirenia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--base);
+  color:#ffffff;
+  margin-top: 0;
+  margin-left: 50px;
+  width: 70vw;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin-left: 3vw;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link-block {
+  width: var(--width);
+  height: var(--height);
+  margin: 10px;
+  border: 20px solid white;
+  border-bottom: 50px solid white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+
+}
