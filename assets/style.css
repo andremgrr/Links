@@ -121,7 +121,7 @@ section.dynamic {
 
 
 body {
-    background: linear-gradient(-45deg, #FE9A38, #EA8C82, #f5bc42, #e771b8);
+    background: linear-gradient(-45deg, #ef8d2b, #EA8C82, #f5bc42, #e771b8);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
 }
