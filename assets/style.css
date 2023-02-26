@@ -270,6 +270,8 @@ div.scroll {
     width: var(--width);
     height: var(--height);
     margin: 10px;
+    filter: brightness(180%);
+    transition: filter 0.2s ease-in-out;
     border: 20px solid white;
     border-bottom: 50px solid white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -277,6 +279,25 @@ div.scroll {
     overflow: hidden;
     position: relative;
 
+  }
+
+  .image-block:hover {
+    animation: shake 0.5s, remove-filter 0.2s ease-in-out 2s forwards;
+
+  }
+
+  @keyframes remove-filter {
+    from { filter: brightness(150%); }
+    to { filter: brightness(100%); }
+  }
+  
+
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, 0); }
+    50% { transform: translate(0, -10px); }
+    75% { transform: translate(10px, 0); }
+    100% { transform: translate(0, -10px); }
   }
 
   @media only screen and (max-width:500px) {
@@ -299,6 +320,8 @@ div.scroll {
     width: 50vw;
 
   }
+
+
 
   @media only screen and (max-width:500px) {
     .image-blocks {
@@ -371,3 +394,21 @@ div.scroll {
   position: relative;
 
 }
+/* overlay 
+
+ul.image-blocks > li:not(:firstchild) {
+display:none;
+}
+
+.image-block aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0, 0.75);
+  z-index: 2;
+  padding: 40px;
+}
+
+*/
