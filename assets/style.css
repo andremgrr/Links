@@ -46,7 +46,7 @@ section.dynamic {
 /* Header */
 
 .title-section {
-    height: 60vh;
+    height: 55vh;
     padding-top: 10vh;
     padding-left: 10vh;
 }
@@ -292,6 +292,46 @@ section.dynamic {
         padding: 15px 15px;
         padding-left: 0px;
     }
+}
+
+
+.Mix {
+  border: solid 3px white;
+  background-image: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "sirenia", sans-serif;
+  padding: 15px 30px;
+  text-align: center;
+  width:10vw;
+  margin-top: -10.5vh;
+  margin-left: 22vw;
+}
+
+@media (max-width: 500px) {
+  .Mix {
+    font-size: 16px;
+    padding: 5px 15px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -7.3vh;
+    margin-left: 55vw;
+  }
+}
+
+.Mix:hover {
+  background-image: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
+  font-family: "sirenia", sans-serif;
+  font-size: 20px;
+  border-radius: 40px;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  width:10vw;
+  margin-top: -10.5vh;
+  margin-left: 22vw;
 }
 
 
@@ -866,4 +906,33 @@ div.scroll {
     width: 50vw;
     padding-left: 0;
   }
+}
+
+/* Mixed collection */
+
+.mix-body {
+  background: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.title-header-mix {
+  font-family:'Broodim';
+  font-size: var(--header);
+  color:#fdfdfd;
+  text-shadow: 0 0 10px #fcd08e, 0 0 20px #fcd08e,, 0 0 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
 }
