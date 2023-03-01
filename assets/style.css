@@ -57,14 +57,25 @@ section.dynamic {
     }
 }
 
-.title-header {
+.channel-title {
     font-family:'Broodim';
     font-size: var(--header);
     color:#f7eed0;
+    width: 30vw;
     text-shadow: 0 0 10px #efce36, 0 0 20px #efce36, 0 0 30px;
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media (max-width: 425px) {
+  .channel-title {
+      padding: 15px 15px;
+      padding-left: 0px;
+      width: 80vw;
+  }
+}
+
+
 
 .title-subheader {
   font-family: "sirenia", sans-serif;
@@ -935,4 +946,26 @@ div.scroll {
 100% {
   background-position: 0% 50%;
 }
+}
+
+/* overlay */
+
+
+
+.image-thumb {
+
+  aspect-ratio: 1 / 1.5;
+	width: 100%;
+  object-fit: cover;
+	object-position: center;
+}
+
+@media (max-width:500px) {
+  .image-thumb {
+    transform: scale(3);
+    aspect-ratio: 1 / 1.5;
+	width: 100%;
+  object-fit: cover;
+	object-position: center;
+  }
 }
