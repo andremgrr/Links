@@ -27,7 +27,7 @@ html, body {
   --height: 140px;
 }
 
-@media (min-width: 800px){
+@media (min-width: 900px){
   :root {
       --base: 30px;
       --header: 150px;
@@ -38,6 +38,7 @@ html, body {
   }
 }
 
+
 section.dynamic {
   display: flex;
   flex-direction: var(--flex-direction);
@@ -47,11 +48,12 @@ section.dynamic {
 
 .title-section {
     height: 55vh;
+   
     padding-top: 10vh;
     padding-left: 10vh;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .title-section {
         padding-left: 3vh;
     }
@@ -67,7 +69,7 @@ section.dynamic {
     margin-bottom: 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 680px) {
   .channel-title {
       padding: 15px 15px;
       padding-left: 0px;
@@ -132,6 +134,13 @@ section.dynamic {
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .Images {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+}
+
 .Images:hover {
   background-image: linear-gradient(-45deg, #ef8d2b, #EA8C82);
   font-family: "sirenia", sans-serif;
@@ -175,6 +184,13 @@ section.dynamic {
   .Links {
     font-size: 16px;
     padding: 15px 15px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .Links {
+    font-size: 16px;
+    padding: 20px 20px;
   }
 }
 
@@ -224,6 +240,13 @@ section.dynamic {
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .Texts {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+}
+
 .Texts:hover {
   background-image: linear-gradient(-45deg, #E03A26, #EA8C82);
   font-family: "sirenia", sans-serif;
@@ -268,6 +291,13 @@ section.dynamic {
   .Videos {
     font-size: 16px;
     padding: 15px 15px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .Videos {
+    font-size: 16px;
+    padding: 20px 20px;
   }
 }
 
@@ -332,6 +362,41 @@ section.dynamic {
   }
 }
 
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .Mix {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 50vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .Mix {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 40vw;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width: 800px) {
+  .Mix {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 35vw;
+  }
+}
 .Mix:hover {
   background-image: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
   font-family: "sirenia", sans-serif;
@@ -402,11 +467,17 @@ div.scroll {
     padding-bottom: 15vh;
   }
 
-  @media (max-width:500px) {
+  @media (max-width:375px) {
     div.scroll {
       padding: 0px;
       justify-content: left;
     }
+}
+
+@media only screen and (min-width:375px) and (max-width:500px) {
+  div.scroll {
+    justify-content: left;
+  }
 }
 
   @media only screen and (min-width:720px) {
@@ -550,7 +621,7 @@ div.scroll {
 
 
 
-  @media only screen and (max-width:500px) {
+  @media only screen and (max-width:600px) {
     .image-blocks {
       display: grid;
       grid-template-columns: 20% 20%;
@@ -562,6 +633,17 @@ div.scroll {
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .image-blocks {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    gap: 50px;
+    row-gap: 20px;
+    width: 100vw;
+    padding-left: 0;
+  }
+}
   .collection-header {
     font-family:'Broodim';
     font-size: 80px;
