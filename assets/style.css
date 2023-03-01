@@ -141,6 +141,8 @@ section.dynamic {
   }
 }
 
+
+
 .Images:hover {
   background-image: linear-gradient(-45deg, #ef8d2b, #EA8C82);
   font-family: "sirenia", sans-serif;
@@ -390,6 +392,18 @@ section.dynamic {
   .Mix {
     font-size: 16px;
     padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 35vw;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 900px) {
+  .Mix {
+    font-size: 16px;
+    padding: 8px 23px;
     width:16vw;
     text-align: center;
     text-decoration: none;
