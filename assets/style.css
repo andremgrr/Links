@@ -56,6 +56,7 @@ section.dynamic {
 @media (max-width: 500px) {
     .title-section {
         padding-left: 3vh;
+        height: 52vh;
         padding-top: 15px;
     }
 }
@@ -411,6 +412,21 @@ section.dynamic {
   margin-left: 22vw;
 }
 
+#color-button {
+  border: solid 3px white;
+  background-image: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: "sirenia", sans-serif;
+  padding: 15px 30px;
+  text-align: center;
+  width:10vw;
+  margin-top: -10.5vh;
+  margin-left: 22vw;
+}
+
+/* body code */
 
 body {
     background: linear-gradient(-45deg, #ef8d2b, #EA8C82, #f5bc42, #e771b8);
@@ -419,6 +435,23 @@ body {
 }
 
 @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body.color2 {
+  background: linear-gradient(-45deg, #aff85b, #EA8C82, #4284f5, #e771b8);
+  animation: gradientBackground2 5s ease infinite;
+}
+
+@keyframes gradientBackground2 {
   0% {
     background-position: 0% 50%;
   }
@@ -480,6 +513,7 @@ div.scroll {
   div.scroll {
     justify-content: left;
     height: 45vh;
+    padding-top: 0;
   }
 }
 
@@ -517,50 +551,6 @@ div.scroll {
   }
 
   
-/*
-  .polaroid::before {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    right: -15px;
-    bottom: -15px;
-    border: 2px dashed #ccc;
-  }
-
-  .polaroid::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    border: 5px solid white;
-  }
-
-  */
-
-  /* Collection code */
-
-  /*.collection-body {
-    background: linear-gradient(-45deg, #FE9A38, #EA8C82, #f5bc42, #e771b8);
-    background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-*/
-
   .title {
     font-family:"sirenia", sans-serif;
     font-weight: 100;
@@ -581,6 +571,8 @@ div.scroll {
     position: relative;
 
   }
+
+  
 
   .image-block:hover {
     animation: shake 0.5s, remove-filter 0.2s ease-in-out 2s forwards;

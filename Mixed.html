@@ -6,6 +6,7 @@
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
 		<script defer src="assets/arena.js"></script>
+        <script defer src="script.js"></script>
     </head>
 
     <!--Header-->
@@ -19,8 +20,7 @@
                 <a href="Link.html"><H2 class="Links"></H2></a>
                 <a href="Text.html"><H2 class="Texts"></H2></a>
                 <a href="Video.html"><H2 class="Videos"></H2></a>
-                <a href="Mixed.html"><H2 class="Mix">Mix</H2></a>
-                
+                <button id="color-button">Mix</button>
             </div>
             <section>
                 <!-- Replace this URL with your channel to connect the API! -->
@@ -35,9 +35,9 @@
             <!--Templates-->
 
             <template id="image-block">
-                <li class="image-block">
+                <div class="image-block">
                        <img class="image-thumb">
-                </li>
+                </div>
             </template>
 
             <!-- Links (saved sites). -->
