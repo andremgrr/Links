@@ -29,7 +29,7 @@ html, body {
 
 @media (min-width: 900px){
   :root {
-      --base: 30px;
+      --base: 25px;
       --header: 150px;
       --flex-direction: row;
       --width: 250px;
@@ -56,8 +56,7 @@ section.dynamic {
 @media (max-width: 500px) {
     .title-section {
         padding-left: 3vh;
-        height: 52vh;
-        padding-top: 15px;
+        height: 53vh;
     }
 }
 
@@ -74,14 +73,13 @@ section.dynamic {
 @media (max-width: 680px) {
   .channel-title {
       padding: 15px 15px;
+      padding-top: 0px;
       padding-left: 0px;
       width: 80vw;
   }
 }
 
-
-
-.title-subheader {
+.channel-description {
   font-family: "sirenia", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -92,8 +90,8 @@ section.dynamic {
 }
 
 @media (max-width: 500px) {
-  .title-subheader {
-      width: 70vw;
+  .channel-description {
+      width: 80vw;
   }
 }
 
@@ -399,6 +397,7 @@ section.dynamic {
     margin-left: 35vw;
   }
 }
+
 .Mix:hover {
   background-image: linear-gradient(-45deg, #E88597, #e8b097,  #c4ed3c, #77C8EF);
   font-family: "sirenia", sans-serif;
@@ -424,6 +423,54 @@ section.dynamic {
   width:10vw;
   margin-top: -10.5vh;
   margin-left: 22vw;
+}
+
+@media (max-width: 500px) {
+  #color-button {
+    font-size: 16px;
+    padding: 5px 15px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -7.3vh;
+    margin-left: 55vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  #color-button {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 50vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  #color-button {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 40vw;
+  }
+}
+
+@media screen and (min-width:700px) and (max-width: 800px) {
+  #color-button {
+    font-size: 16px;
+    padding: 8px 20px;
+    width:16vw;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -8.2vh;
+    margin-left: 35vw;
+  }
 }
 
 /* body code */
@@ -1045,4 +1092,10 @@ div.scroll {
   object-fit: cover;
 	object-position: center;
   }
+}
+
+.content {
+  font-family: "sirenia", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
